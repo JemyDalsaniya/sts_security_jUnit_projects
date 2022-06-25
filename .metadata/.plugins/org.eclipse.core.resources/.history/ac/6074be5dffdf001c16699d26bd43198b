@@ -1,0 +1,33 @@
+package com.springsecurity.service;
+
+import static org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors.user;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.springsecurity.dao.UserRepository;
+import com.springsecurity.model.User;
+
+@Service
+public class UserServiceImpl implements UserService {
+
+	@Autowired
+	UserRepository userRepository;
+
+	@Override
+	public void getAllUsers() {
+		userRepository.findAll();
+	}
+
+//	@Override
+//	public User getUser(String username) {
+//		System.out.println("inside get user in service");
+//	}
+
+	@Override
+	public void addUser(User user) {
+		userRepository.save(user);
+
+	}
+
+}

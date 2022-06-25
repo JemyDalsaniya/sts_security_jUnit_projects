@@ -1,0 +1,9 @@
+package com.springsecurity.model;
+
+public class User {
+
+	Stirng uname;
+	String email;
+	String password;
+
+}

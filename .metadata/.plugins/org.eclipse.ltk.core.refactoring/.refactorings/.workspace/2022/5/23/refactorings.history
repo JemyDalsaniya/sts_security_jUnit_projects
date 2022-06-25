@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;springSecurityTokens&apos; to &apos;springSecurityRest&apos;" description="Rename resource &apos;springSecurityTokens&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/springSecurityTokens" name="springSecurityRest" stamp="1653896218218" updateReferences="true"/>
+</session>

@@ -1,0 +1,32 @@
+package com.springsecurity.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.springsecurity.dao.UserRepository;
+import com.springsecurity.model.User;
+
+@Service
+public class UserServiceImpl implements UserService {
+
+	@Autowired
+	UserRepository userRepository;
+
+	@Override
+	public void getAllUsers() {
+		userRepository.findAll();
+	}
+
+	@Override
+	public void addUser(User user) {
+		userRepository.save(user);
+
+	}
+
+	@Override
+	public User getUser(String uname) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

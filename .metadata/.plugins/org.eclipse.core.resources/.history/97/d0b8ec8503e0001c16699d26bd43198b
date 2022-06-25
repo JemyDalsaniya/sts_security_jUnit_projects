@@ -1,0 +1,13 @@
+package com.springsecurity.service;
+
+import com.springsecurity.model.User;
+
+public interface UserService {
+
+	void getAllUsers();
+
+	User getUser(String uname);
+
+	void addUser(User user);
+
+}

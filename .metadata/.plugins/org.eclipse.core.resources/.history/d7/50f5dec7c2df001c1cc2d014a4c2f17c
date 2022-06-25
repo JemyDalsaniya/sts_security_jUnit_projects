@@ -1,0 +1,52 @@
+package com.springsecurity.service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.springsecurity.model.User;
+
+@Service
+public class UserServiceImpl implements UserService {
+
+	List<User> list = new ArrayList<>();
+
+	@Override
+	public List<User> getAllUsers() {
+		return null;
+	}
+
+	@Override
+	public User getUser(String uname) {
+		return null;
+	}
+
+	@Override
+	public User addUser(User user) {
+		return null;
+	}
+
+//	public UserServiceImpl() {
+//		list.add(new User("jemy", "123", "jemy@gmail.com"));
+//		list.add(new User("nikita", "123", "nikita@gmail.com"));
+//	}
+//
+//	@Override
+//	public List<User> getAllUsers() {
+//		return this.list;
+//	}
+//
+//	@Override
+//	public User getUser(String uname) {
+//		System.out.println("inside get user in service");
+//		return this.list.stream().filter((user) -> user.getUname().equals(uname)).findAny().orElse(null);
+//	}
+//
+//	@Override
+//	public User addUser(User user) {
+//		this.list.add(user);
+//		return user;
+//	}
+
+}

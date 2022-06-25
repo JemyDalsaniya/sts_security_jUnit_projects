@@ -1,0 +1,7 @@
+package com.springsecurity.model;
+
+import org.springframework.security.core.userdetails.UserDetails;
+
+public class CustomUserDetail implements UserDetails {
+
+}

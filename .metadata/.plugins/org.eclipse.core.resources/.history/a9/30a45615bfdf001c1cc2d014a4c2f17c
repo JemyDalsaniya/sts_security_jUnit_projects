@@ -1,0 +1,5 @@
+package com.springsecurity.dao;
+
+public class UserRepository {
+
+}

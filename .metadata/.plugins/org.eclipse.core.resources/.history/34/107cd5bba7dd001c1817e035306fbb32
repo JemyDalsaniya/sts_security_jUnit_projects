@@ -1,0 +1,12 @@
+package com.springsecurity.controller;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class TestController {
+
+	private String signin() {
+		return null;
+
+	}
+}

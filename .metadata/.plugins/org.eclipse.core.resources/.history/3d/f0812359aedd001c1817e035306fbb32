@@ -1,0 +1,4 @@
+#ftl page
+spring.freemarker.template-loader-path: /templates/ 
+spring.freemarker.suffix: .ftl
+
